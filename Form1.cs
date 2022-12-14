@@ -15,6 +15,27 @@ namespace calculator
         public Form1()
         {
             InitializeComponent();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            App app = new App();
+            app.Show();
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void lblTxt_AutoSizeChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
