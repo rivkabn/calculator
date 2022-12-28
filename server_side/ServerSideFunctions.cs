@@ -46,13 +46,13 @@ namespace calculator
                     ans = (num1) - (num2);
                     break;
                 case "/":
-                    try
+                    if(num2!=0)
                     {
 
                         ans =Math.Round( (num1) / (num2),2);
                     }
-                    catch (DivideByZeroException err) {
-                        status = err.Message;
+                    else {
+                        status = "ERROR_DIVISION_BY_ZERO";
                     
                     }
                     break;
